@@ -110,6 +110,25 @@ You can configure the MCP server to run within VS Code by following these steps:
 2. Run `npm run build` to compile
 3. The server will automatically load your tools on startup
 
+## Debugging
+
+You can debug your MCP server using the `mcp-debug` tool:
+
+```bash
+# Start the server in one terminal
+npm start
+
+# In another terminal, run mcp-debug
+npx mcp-debug
+```
+
+The `mcp-debug` tool provides a CLI interface to:
+- List available tools on your MCP server
+- Execute tools with specific parameters
+- View the full responses from your server
+
+This helps you test your tools before integrating them with an LLM application. For more information, see the [MCP Framework HTTP Quickstart](https://mcp-framework.com/docs/http-quickstart/#testing-your-http-server).
+
 ## Learn More
 
 - [MCP Framework Github](https://github.com/QuantGeekDev/mcp-framework)
