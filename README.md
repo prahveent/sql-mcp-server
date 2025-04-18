@@ -59,6 +59,13 @@ DB_PASSWORD=StrongPassword!123
 DB_PORT=1433
 ```
 
+### AdventureWorks Sample Database
+
+This project uses the AdventureWorks sample database. You can download and install it from:
+- [Microsoft Docs: Install and Configure AdventureWorks](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms)
+
+Follow the instructions on the Microsoft documentation page to download the database backup file and restore it to your SQL Server instance.
+
 ### Creating a Read-Only User
 
 To create a read-only user for SQL Server that the application can use:
