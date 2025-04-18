@@ -65,12 +65,6 @@ DB_PORT=1433
 2. Run `npm run build` to compile
 3. The server will automatically load your tools on startup
 
-## Learn More
-
-- [MCP Framework Github](https://github.com/QuantGeekDev/mcp-framework)
-- [MCP Framework Docs](https://mcp-framework.com)
-```
-
 ## Using with VS Code
 
 You can configure the MCP server to run within VS Code by following these steps:
@@ -84,26 +78,6 @@ You can configure the MCP server to run within VS Code by following these steps:
   "servers": {
     "sql-mcp-server": {
       "url": "http://localhost:1337/mcp"
-    }
-  }
-}
-```
-
-## Using with Claude Desktop
-
-### Local Development
-
-Add this configuration to your Claude Desktop config file:
-
-**MacOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
-**Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "weather-http-server": {
-      "command": "node",
-      "args":["/absolute/path/to/weather-http-server/dist/index.js"]
     }
   }
 }
