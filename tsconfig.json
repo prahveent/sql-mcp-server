@@ -17,21 +17,3 @@
     "node_modules"
   ]
 }
-
-// {
-//   "compilerOptions": {
-//     "target": "ES2020",
-//     "module": "NodeNext", // or "CommonJS", depending on your setup
-//     "moduleResolution": "NodeNext", // or "node"
-//     "esModuleInterop": true,
-//     "outDir": "./dist",
-//     "baseUrl": "./src",
-//     "paths": {
-//       "*": ["*"]
-//     },
-//     "forceConsistentCasingInFileNames": true,
-//     "strict": true
-//   },
-//   "include": ["src/**/*"],
-//   "exclude": ["node_modules", "dist"]
-// }
