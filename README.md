@@ -59,43 +59,6 @@ DB_PASSWORD=StrongPassword!123
 DB_PORT=1433
 ```
 
-
-
-## Using with Claude Desktop
-
-### Local Development
-
-Add this configuration to your Claude Desktop config file:
-
-**MacOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`  
-**Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
-
-```json
-{
-  "mcpServers": {
-    "sql-mcp-server": {
-      "command": "node",
-      "args":["/absolute/path/to/sql-mcp-server/dist/index.js"]
-    }
-  }
-}
-```
-
-### After Publishing
-
-Add this configuration to your Claude Desktop config file:
-
-```json
-{
-  "mcpServers": {
-    "sql-mcp-server": {
-      "command": "npx",
-      "args": ["sql-mcp-server"]
-    }
-  }
-}
-```
-
 ## Building and Testing
 
 1. Make changes to your tools
