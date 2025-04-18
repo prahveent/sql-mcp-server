@@ -1,0 +1,34 @@
+{
+  "name": "sql-mcp-server",
+  "version": "0.0.1",
+  "description": "SQL MCP Server for database interaction",
+  "type": "module",
+  "bin": {
+    "sql-mcp-server": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && mcp-build",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mcp-framework": "^0.2.2",
+    "msnodesqlv8": "^4.5.0",
+    "mssql": "^11.0.1"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.7",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.19.0"
+  }
+}
