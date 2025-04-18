@@ -59,12 +59,6 @@ DB_PASSWORD=StrongPassword!123
 DB_PORT=1433
 ```
 
-## Building and Testing
-
-1. Make changes to your tools
-2. Run `npm run build` to compile
-3. The server will automatically load your tools on startup
-
 ## Using with VS Code
 
 You can configure the MCP server to run within VS Code by following these steps:
