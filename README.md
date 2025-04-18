@@ -72,7 +72,7 @@ To create a read-only user for SQL Server that the application can use:
 
 ```sql
 -- Create a new login and user in master database
-CREATE USER readonly_user FOR LOGIN readonly_user;
+CREATE LOGIN readonly_user WITH PASSWORD = 'StrongPassword!123';
 GO
 
 -- Switch to your target database
