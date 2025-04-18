@@ -59,6 +59,26 @@ DB_PASSWORD=StrongPassword!123
 DB_PORT=1433
 ```
 
+### Creating a Read-Only User
+
+To create a read-only user for SQL Server that the application can use:
+
+```sql
+-- Create a new login and user in master database
+CREATE USER readonly_user FOR LOGIN readonly_user;
+GO
+
+-- Switch to your target database
+USE AdventureWorks2019;
+GO
+
+-- Add the user to the db_datareader role for read-only access
+ALTER ROLE db_datareader ADD MEMBER readonly_user;
+GO
+```
+
+> Note: You'll need to create the SQL Server login first using SQL Server Management Studio or with the `CREATE LOGIN` command before running these commands.
+
 ## Using with VS Code
 
 You can configure the MCP server to run within VS Code by following these steps:
