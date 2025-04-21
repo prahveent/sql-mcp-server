@@ -79,6 +79,9 @@ GO
 USE AdventureWorks2019;
 GO
 
+-- create user for the MasterDB login 
+CREATE USER readonly_user FOR LOGIN readonly_user;
+
 -- Add the user to the db_datareader role for read-only access
 ALTER ROLE db_datareader ADD MEMBER readonly_user;
 GO
